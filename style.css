@@ -1,0 +1,45 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left:2px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #ff0303cf;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 2px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #0004ff;
+    background-color: white;
+
+}
